@@ -70,7 +70,10 @@ while True:
             risinglogin = pyautogui.locateOnScreen('img/risinglogin.png', confidence=0.9)
             if risinglogin is not None:
                 pyautogui.click(risinglogin[0] + 10, risinglogin[1] + 10)
-                pyautogui.write("name")
+                pyautogui.press('f5')
+                sleep(5)
+                pyautogui.click(risinglogin[0] + 10, risinglogin[1] + 10)
+                pyautogui.write("manuferre")
                 pyautogui.moveTo(100,100)
 
 
@@ -84,6 +87,31 @@ while True:
 
 
         """ Alien Worlds """
+        tlmlogin = pyautogui.locateOnScreen('img/tlmlogin.png', confidence=0.9)
+        if tlmlogin is not None:
+            pyautogui.click(tlmlogin[0] + 5, tlmlogin[1] + 5)
+            sleep(10)
+
+
+        googlelogin = pyautogui.locateOnScreen('img/googlelogin.png', confidence=0.9)
+        if googlelogin is not None:
+            pyautogui.click(googlelogin[0] + 10, googlelogin[1] + 10)
+            sleep(10)
+
+
+        alienstab = pyautogui.locateOnScreen('img/alienstab.png', confidence=0.95)
+        if alienstab is not None:
+            pyautogui.click(alienstab[0] + 5, alienstab[1] + 5)
+            sleep(5)
+
+
+        aliensstart = pyautogui.locateOnScreen('img/aliensstart.png', confidence=0.9)
+        if aliensstart is not None:
+            pyautogui.click(aliensstart[0] + 10, aliensstart[1] + 10)
+            pyautogui.moveTo(100,100)
+            sleep(5)
+
+
         mine = pyautogui.locateOnScreen('img/mine.png', confidence=0.9)
         if mine is not None:
             pyautogui.click(mine[0] + 10, mine[1] + 10)
